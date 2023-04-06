@@ -1,0 +1,77 @@
+#quiz-container {
+    display: flex;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#quiz-container button {
+    width: 100%;
+    margin: 8px;
+    font-size: 20px;
+    padding: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+#quiz-form {
+    display: none;
+    width: 50%;
+    vertical-align: top;
+}
+
+#pokemon-info {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#pokemon-info h2 {
+    font-size: 36px;
+    margin: 16px 0;
+}
+
+#pokemon-info h3 {
+    font-size: 24px;
+    margin: 16px 0;
+}
+
+#pokemon-info img {
+    max-width: 300px;
+    margin: 16px auto;
+}
+
+#pokemon-info div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#pokemon-info button {
+    width: 48%;
+    margin: 8px;
+    font-size: 20px;
+    padding: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #008CBA;
+    color: white;
+    cursor: pointer;
+}
+
+#score-container {
+    display: none;
+    width: 50%;
+    vertical-align: top;
+}
+
+#score-container h2 {
+    font-size: 36px;
+    margin: 16px 0;
+}
+
+#score-container p {
+    font-size: 24px;
+    margin: 16px 0;
+}

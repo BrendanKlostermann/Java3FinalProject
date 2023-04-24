@@ -21,18 +21,27 @@
 
 </header>
 <body>
-    <div class="sidenav">
-        <a href="index.jsp">Home</a>
-        <a href="pokedex">Pokedex</a>
-        <br>
-        <br>
-        <a href="pictureQuiz">Picture Quiz</a>
-        <a href="typeQuiz">Type Quiz</a>
-        <a href="fanQuestions">Fan Made Questions</a>
-        <br>
-        <br>
-        <a href="makeYourOwnQuestion">Submit A Question</a>
-    </div>
+<div class="sidenav">
+    <a href="index.jsp">Home</a>
+    <a href="pokedex">Pokedex</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="pictureQuiz">Picture Quiz</a>
+    <br>
+    <a href="typeQuiz">Type Quiz</a>
+    <br>
+    <a href="fanQuestions">Fan Made Questions</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="login">Login</a>
+    <br>
+    <a href="makeYourOwnQuestion">Submit A Question</a>
+</div>
 
 
     <main>

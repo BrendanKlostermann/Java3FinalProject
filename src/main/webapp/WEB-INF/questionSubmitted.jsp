@@ -8,24 +8,35 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Submit A Question</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <link rel="stylesheet" href="test.css">
     </head>
     <header>
 
     </header>
     <body>
-        <div class="sidenav">
-            <a href="index.jsp">Home</a>
-            <a href="pokedex">Pokedex</a>
-            <br>
-            <br>
-            <a href="pictureQuiz">Picture Quiz</a>
-            <a href="typeQuiz">Type Quiz</a>
-            <a href="fanQuestions">Fan Made Questions</a>
-            <br>
-            <br>
-            <a href="makeYourOwnQuestion">Submit A Question</a>
-        </div>
+    <div class="sidenav">
+        <a href="index.jsp">Home</a>
+        <a href="pokedex">Pokedex</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="pictureQuiz">Picture Quiz</a>
+        <br>
+        <a href="typeQuiz">Type Quiz</a>
+        <br>
+        <a href="fanQuestions">Fan Made Questions</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="login">Login</a>
+        <br>
+        <a href="makeYourOwnQuestion">Submit A Question</a>
+    </div>
 
         <h1>Thank you!</h1>
         <p>Your question will be reviewed before being added!</p>

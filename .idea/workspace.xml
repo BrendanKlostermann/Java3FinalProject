@@ -9,40 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d0271fa-c463-4566-a529-6609b8afd200" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/META-INF/application.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FanQuestionDAO_CSV/FanQuestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FanQuestionDAO_CSV/FanQuestionDAO_CSV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FanQuestionDAO_CSV/FanQuestionServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FanQuestionDAO_CSV/MakeYourOwnQuestionServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FanQuestionDAO_CSV/QuestionSubmittedServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LogIn/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyDAO_CSV/Pokemon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyDAO_CSV/PokemonDAO_CSV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyDAO_CSV/PokemonServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PictureQuiz/PictureQuizServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TypeQuiz/TypeQuizServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/FanQuestions.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/MakeYourOwnQuestions.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/PictureQuiz.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/PokemonCSV/fanQuestions.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/PokemonCSV/pokemon.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/TypeQuiz.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pokedex.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/questionSubmitted.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/quizz.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/interfaceScript.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/test.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/tradingCardStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8d0271fa-c463-4566-a529-6609b8afd200" name="Changes" comment="Initial push...">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/pokemonQuiz_ear_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/PokemonCSV/pokemon.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/PokemonCSV/pokemon.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +71,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/aquas/IdeaProjects/java3-project&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/aquas/IdeaProjects/pokemonQuiz&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -113,8 +86,8 @@
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
-      &quot;azure&quot;,
       &quot;sqlserver&quot;,
+      &quot;azure&quot;,
       &quot;mysql&quot;
     ]
   }
@@ -389,10 +362,30 @@
       <workItem from="1680818299541" duration="243000" />
       <workItem from="1680818551285" duration="16000" />
       <workItem from="1680818819839" duration="1064000" />
+      <workItem from="1680821460510" duration="5394000" />
+      <workItem from="1680830539421" duration="618000" />
+      <workItem from="1680833566475" duration="615000" />
+      <workItem from="1680881573529" duration="26000" />
+      <workItem from="1681427251829" duration="401000" />
+      <workItem from="1681428896920" duration="127000" />
+      <workItem from="1681569831581" duration="3112000" />
+      <workItem from="1682262970159" duration="82000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial push...">
+      <created>1680821475950</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680821475950</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial push..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial push..." />
   </component>
 </project>

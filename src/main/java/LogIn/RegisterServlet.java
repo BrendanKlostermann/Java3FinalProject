@@ -66,6 +66,8 @@ public class RegisterServlet extends HttpServlet {
             if(numRowsAffected == 1) {
                 results.put("userAddSuccess", "New user added. Please login to continue.");
                 // TO DO: redirect user to login page.
+                request.getRequestDispatcher("WEB-INF/login.jsp").forward(request, response);
+                return;
             }
         } else {
             results.put("firstName", firstName);

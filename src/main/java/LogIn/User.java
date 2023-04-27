@@ -9,6 +9,8 @@ public class User {
     private String last_name;
     private String email;
     private char[] password;
+
+    private String role;
     private String status;
     private String privileges;
 
@@ -33,6 +35,14 @@ public class User {
         setEmail(email);
         setStatus(status);
         setPrivileges(privileges);
+    }
+
+    public User(int id, String first_name, String last_name, String email, String role) {
+        setId(id);
+        setFirst_name(first_name);
+        setLast_name(last_name);
+        setEmail(email);
+        setRole(role);
     }
 
     public int getId() {
@@ -141,5 +151,13 @@ public class User {
             throw new IllegalArgumentException("Invalid privileges");
         }
         this.privileges = privileges;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public String getRole() {
+        return this.role;
     }
 }

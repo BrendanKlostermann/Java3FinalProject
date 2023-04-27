@@ -42,9 +42,11 @@ public class MakeYourOwnQuestionServlet extends HttpServlet {
         Random rand = new Random();
         List<Integer> randomNumbers = new ArrayList<>();
         List<String> shuffledAnswers = new ArrayList<>();
-        for(int i = 4; i > 0; i--){
-            int randomNumber = rand.nextInt(i)+1;
-            randomNumbers.add(randomNumber);
+        while(randomNumbers.size() < 4){
+            int num = rand.nextInt(4);
+            if(!randomNumbers.contains(num)){
+                randomNumbers.add((num));
+            }
         }
         for(int i = 0; i < shuffleOptions.size(); i++){
             shuffledAnswers.add(shuffleOptions.get(randomNumbers.get(i)));

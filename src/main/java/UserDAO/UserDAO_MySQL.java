@@ -27,8 +27,7 @@ public class UserDAO_MySQL implements DAO_MySQL<User> {
                     user.setLast_name(resultSet.getString(3));
                     user.setEmail(resultSet.getString(4));
                     user.setPasswordFromDB(resultSet.getString(5));
-                    user.setStatus(resultSet.getString(6));
-                    user.setPrivileges(resultSet.getString(7));
+                    user.setRole(resultSet.getString(6));
                 }
             }
         }catch (SQLException e){
@@ -37,6 +36,8 @@ public class UserDAO_MySQL implements DAO_MySQL<User> {
         }
         return user;
     }
+
+
 
     public List<User> getAllUsers(){
         List<User> users = new ArrayList<>();
@@ -67,8 +68,7 @@ public class UserDAO_MySQL implements DAO_MySQL<User> {
         int numRowsAffected = 0;
         try (Connection connection = getConnection()) {
             PreparedStatement statement = connection.prepareStatement(
-                    "INSERT INTO users (first_name, last_name, email, password) " +
-                            "values (?,?,?,?)");
+                    "INSERT INTO users (first_name, last_name, email, password) values (?,?,?,?)");
             statement.setString(1, user.getFirst_name());
             statement.setString(2, user.getLast_name());
             statement.setString(3, user.getEmail());

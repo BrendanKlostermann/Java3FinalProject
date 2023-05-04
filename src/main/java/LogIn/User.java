@@ -8,7 +8,7 @@ public class User {
     private String first_name;
     private String last_name;
     private String email;
-    private char[] password;
+    private String password;
 
     private String role;
     private String status;
@@ -103,7 +103,7 @@ public class User {
         this.email = email;
     }
 
-    public char[] getPassword() {
+    public String getPassword() {
         return password;
     }
 
@@ -121,11 +121,11 @@ public class User {
         if(!m.matches()) {
             throw new IllegalArgumentException("Password must contain at least 8 characters, with 1 digit, 1 lowercase,and 1 uppercase letter");
         }
-        this.password = passwordStr.toCharArray();
+        this.password = passwordStr;
     }
 
     public void setPasswordFromDB(String password){
-        this.password = password.toCharArray();
+        this.password = password;
     }
 
     public void unsetPassword(){

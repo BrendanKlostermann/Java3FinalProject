@@ -1,4 +1,41 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<%
+    String questionError = (String)request.getAttribute("questionError");
+    String emailError = (String)request.getAttribute("emailError");
+    String question = (String)request.getAttribute("question");
+    if(questionError == null){
+        questionError = "";
+    }
+    if(emailError == null){
+        emailError = "";
+    }
+    if(question == null){
+        question = "";
+    }
+
+    String isHidden = "d-none";
+    String userRole = (String)request.getAttribute("userRole");
+    if(userRole != null){
+        if(userRole.equals("Administrator")){
+            isHidden = "";
+        }
+    }
+
+    String log;
+    String logText;
+    if(session.getAttribute("user") == null){
+        log = "login";
+        logText = "LogIn";
+    }
+    else{
+        log = "logout";
+        logText = "LogOut";
+    }
+
+
+%>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -32,12 +69,42 @@
         <br>
         <br>
         <br>
-        <a href="login">Login</a>
+        <a href="<%=log%>"><%=logText%></a>
         <br>
         <a href="makeYourOwnQuestion">Submit A Question</a>
+        <br>
         <a href="help">Get Help</a>
+
     </div>
 </header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <form action="help" method="post">
+                <div class="form-group">
+                    <label for="question">Question:</label>
+                    <input type="text" class="form-control" id="question" name="question" value="<%=question%>">
+                    <p class="text-danger"><%=questionError%></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                    <p class="text-danger"><%=emailError%></p>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <br>
+            <form action="viewhelp" method="get">
+                <button type="submit" class="btn btn-success <%=isHidden%>">Help Requests</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
 
 </body>
 </html>

@@ -7,6 +7,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     String pokemonListJson = (String) request.getAttribute("pokemonListJson");
+
+    String log;
+    String logText;
+    if(session.getAttribute("user") == null){
+        log = "login";
+        logText = "LogIn";
+    }
+    else{
+        log = "logout";
+        logText = "LogOut";
+    }
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,9 +50,11 @@
         <br>
         <br>
         <br>
-        <a href="login">Login</a>
+        <a href="<%=log%>"><%=logText%></a>
         <br>
         <a href="makeYourOwnQuestion">Submit A Question</a>
+        <br>
+        <a href="help">Get Help</a>
     </div>
 
         <main style="max-width: 800px; margin: 0 auto; padding: 16px;">

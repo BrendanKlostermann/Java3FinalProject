@@ -3,6 +3,17 @@
     int randomNumber = (int) (Math.random() * 721) + 1;
     int randomNumberTwo = (int) (Math.random() * 721) + 1;
     int randomNumberThree = (int) (Math.random() * 721) + 1;
+
+    String log;
+    String logText;
+    if(session.getAttribute("user") == null){
+        log = "login";
+        logText = "LogIn";
+    }
+    else{
+        log = "logout";
+        logText = "LogOut";
+    }
 %>
 <html>
 
@@ -35,9 +46,11 @@
             <br>
             <br>
             <br>
-            <a href="login">Login</a>
+            <a href="<%=log%>"><%=logText%></a>
             <br>
             <a href="makeYourOwnQuestion">Submit A Question</a>
+            <br>
+            <a href="help">Get Help</a>
         </div>
 
         <div class="main">

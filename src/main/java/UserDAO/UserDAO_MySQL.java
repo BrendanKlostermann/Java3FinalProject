@@ -6,6 +6,7 @@ import org.mindrot.jbcrypt.BCrypt;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.security.spec.InvalidKeySpecException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -72,7 +73,7 @@ public class UserDAO_MySQL implements DAO_MySQL<User> {
             statement.setString(1, user.getFirst_name());
             statement.setString(2, user.getLast_name());
             statement.setString(3, user.getEmail());
-            statement.setString(4, BCrypt.hashpw(user.getPassword().toString(), BCrypt.gensalt()));
+            statement.setString(4, user.getPassword().toString());
             numRowsAffected = statement.executeUpdate();
             statement.close();
         } catch (SQLException e){

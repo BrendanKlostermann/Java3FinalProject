@@ -1,6 +1,7 @@
 package LogIn;
 
 
+import UserDAO.PasswordAuthentication;
 import UserDAO.UserDAO_MySQL;
 
 import javax.servlet.*;
@@ -19,6 +20,8 @@ public class RegisterServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+
         String firstName = request.getParameter("firstName");
         String lastName = request.getParameter("lastName");
         String email = request.getParameter("email");
@@ -66,6 +69,7 @@ public class RegisterServlet extends HttpServlet {
             if(numRowsAffected == 1) {
                 results.put("userAddSuccess", "New user added. Please login to continue.");
                 // TO DO: redirect user to login page.
+                request.setAttribute("loginFailed", false);
                 request.getRequestDispatcher("WEB-INF/login.jsp").forward(request, response);
                 return;
             }

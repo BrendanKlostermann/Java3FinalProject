@@ -3,7 +3,7 @@ package FanQuestionDAO_CSV;
 public class FanQuestion {
 
     private int questionID;
-    private String question;
+    private String fanQuestionCSV;
     private String option1;
     private String option2;
     private String option3;
@@ -17,7 +17,7 @@ public class FanQuestion {
 
     public FanQuestion(int questionID, String question, String option1, String option2, String option3, String option4, String answer, String email){
         this.questionID = questionID;
-        this.question = question;
+        this.fanQuestionCSV = question;
         this.option1 = option1;
         this.option2 = option2;
         this.option3 = option3;
@@ -35,11 +35,11 @@ public class FanQuestion {
     }
 
     public String getQuestion() {
-        return question;
+        return fanQuestionCSV;
     }
 
     public void setQuestion(String question) {
-        this.question = question;
+        this.fanQuestionCSV = question;
     }
 
     public String getOption1() {

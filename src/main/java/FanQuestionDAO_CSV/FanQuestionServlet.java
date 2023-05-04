@@ -15,11 +15,7 @@ public class FanQuestionServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<FanQuestion> fanQuestions = FanQuestionDAO_CSV.getAllFanQuestion(request, response);
-
-
-        if(fanQuestions == null){
-            fanQuestions = FanQuestionDAO_CSV.getAllFanQuestion(request, response);
-        }
+        System.out.println(request.getServletContext().getRealPath("WEB-INF/PokemonCSV/fanQuestions.csv"));
 
 
         Gson gson = new Gson();

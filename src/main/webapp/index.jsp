@@ -2,7 +2,26 @@
 <%
     int randomNumber = (int) (Math.random() * 721) + 1;
     int randomNumberTwo = (int) (Math.random() * 721) + 1;
-    int randomNumberThree = (int) (Math.random() * 721) + 1;
+
+    String log;
+    String logText;
+    if(session.getAttribute("user") == null){
+        log = "login";
+        logText = "LogIn";
+    }
+    else{
+        log = "logout";
+        logText = "LogOut";
+    }
+    String submitQuestionText;
+    String submitQuestion;
+    if(session.getAttribute("user") == null){
+        submitQuestion = "";
+        submitQuestionText = "";
+    }else{
+        submitQuestion = "makeYourOwnQuestion";
+        submitQuestionText = "Submit A Question";
+    }
 %>
 <html>
 
@@ -23,9 +42,6 @@
             <a href="pokedex">Pokedex</a>
             <br>
             <br>
-            <br>
-            <br>
-            <br>
             <a href="pictureQuiz">Picture Quiz</a>
             <br>
             <a href="typeQuiz">Type Quiz</a>
@@ -33,17 +49,17 @@
             <a href="fanQuestions">Fan Made Questions</a>
             <br>
             <br>
+            <a href="<%=log%>"><%=logText%></a>
             <br>
+            <a href="<%=submitQuestion%>"><%=submitQuestionText%></a>
             <br>
-            <a href="login">Login</a>
-            <br>
-            <a href="makeYourOwnQuestion">Submit A Question</a>
+            <a href="help">Get Help</a>
         </div>
 
         <div class="main">
             <div class="leftSide">
                 <h3>Our Quiz's</h3>
-                <p>There are 2 great quiz's, challenging your knowledge of the Pokemon universe.</p>
+                <p>There are 2 great quiz's, challenging your knowledge of the Pokémon universe.</p>
                 <ul>
                     <li>Picture Quiz</li>
                     <li>Type Quiz</li>

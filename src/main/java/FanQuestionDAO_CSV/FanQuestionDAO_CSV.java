@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class FanQuestionDAO_CSV {
     public static List<FanQuestion> getAllFanQuestion(HttpServletRequest request, HttpServletResponse response){
         List<FanQuestion> fanQuestions = new ArrayList<>();
-        try(Scanner scanner = new Scanner(new File(request.getServletContext().getRealPath("WEB-INF/PokemonCSV/fanQuestions.csv")))){
+        try(Scanner scanner = new Scanner(new File(request.getServletContext().getRealPath("/WEB-INF/PokemonCSV/fanQuestions.csv")))){
             int rowCount = 0;
             while(scanner.hasNextLine()){
                 String[] line = scanner.nextLine().split(",");

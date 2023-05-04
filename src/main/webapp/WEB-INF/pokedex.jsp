@@ -7,6 +7,26 @@
     if(pokemonList == null){
         pokemonList = new ArrayList<>();
     }
+
+    String log;
+    String logText;
+    if(session.getAttribute("user") == null){
+        log = "login";
+        logText = "LogIn";
+    }
+    else{
+        log = "logout";
+        logText = "LogOut";
+    }
+    String submitQuestionText;
+    String submitQuestion;
+    if(session.getAttribute("user") == null){
+        submitQuestion = "";
+        submitQuestionText = "";
+    }else{
+        submitQuestion = "makeYourOwnQuestion";
+        submitQuestionText = "Submit A Question";
+    }
 %>
 <!doctype html>
 <html lang="en">
@@ -26,9 +46,6 @@
     <a href="pokedex">Pokedex</a>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
     <a href="pictureQuiz">Picture Quiz</a>
     <br>
     <a href="typeQuiz">Type Quiz</a>
@@ -36,11 +53,11 @@
     <a href="fanQuestions">Fan Made Questions</a>
     <br>
     <br>
+    <a href="<%=log%>"><%=logText%></a>
     <br>
+    <a href="<%=submitQuestion%>"><%=submitQuestionText%></a>
     <br>
-    <a href="login">Login</a>
-    <br>
-    <a href="makeYourOwnQuestion">Submit A Question</a>
+    <a href="help">Get Help</a>
 </div>
 
 

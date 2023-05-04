@@ -10,19 +10,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d0271fa-c463-4566-a529-6609b8afd200" name="Changes" comment="got login servlet and register servlet set up, need to do register logic">
-      <change afterPath="$PROJECT_DIR$/src/main/java/HelpDAO_MySQL/Help.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HelpDAO_MySQL/HelpDAO_MySQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/help.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FanSubmittedDAO_MySQL/FanQuestions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FanSubmittedDAO_MySQL/FanSubmittedDAO_MySQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HelpQuestion/HelpServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HelpQuestion/ViewHelpServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LogIn/LogOutServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UserDAO/PasswordAuthentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/viewhelp.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/09d5530c-8ba7-4411-b13b-0b2466de6827.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/09d5530c-8ba7-4411-b13b-0b2466de6827.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/09d5530c-8ba7-4411-b13b-0b2466de6827/storage_v2/_src_/schema/pokemonquiz.qL0LTg.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/09d5530c-8ba7-4411-b13b-0b2466de6827/storage_v2/_src_/schema/pokemonquiz.qL0LTg.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FanQuestionDAO_CSV/MakeYourOwnQuestionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FanQuestionDAO_CSV/MakeYourOwnQuestionServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FanQuestionDAO_CSV/FanQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FanQuestionDAO_CSV/FanQuestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FanQuestionDAO_CSV/FanQuestionDAO_CSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FanQuestionDAO_CSV/FanQuestionDAO_CSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FanQuestionDAO_CSV/FanQuestionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FanQuestionDAO_CSV/FanQuestionServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HelpDAO_MySQL/HelpDAO_MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HelpDAO_MySQL/HelpDAO_MySQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogIn/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogIn/LoginServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LogIn/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogIn/RegisterServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LogIn/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogIn/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserDAO/DAO_MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserDAO/DAO_MySQL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UserDAO/UserDAO_MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserDAO/UserDAO_MySQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/FanQuestions.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/FanQuestions.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/MakeYourOwnQuestions.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/MakeYourOwnQuestions.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/PictureQuiz.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/PictureQuiz.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/TypeQuiz.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/TypeQuiz.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/help.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/help.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pokedex.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pokedex.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/questionSubmitted.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/questionSubmitted.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,8 +95,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/aquas/IdeaProjects/pokemonQuiz",
+    "last_opened_file_path": "C:/Users/aquas/IdeaProjects/java3-project",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -88,6 +107,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
@@ -126,12 +146,10 @@
       <option name="appServicePlanResourceGroup" />
       <option name="appSettingsKey" value="231d9087-f660-4264-a00b-3fb70c5d16ab" />
       <option name="artifact" />
-      <option name="autoPort" value="true" />
       <option name="debugOptions" />
       <option name="deployment" />
       <option name="deploymentStagingDirectoryPath" />
       <option name="funcPath" />
-      <option name="funcPort" value="0" />
       <option name="functionHostArguments" />
       <option name="hostJsonPath" />
       <option name="insightsName" />
@@ -389,6 +407,11 @@
       <workItem from="1682551409976" duration="70000" />
       <workItem from="1682551511479" duration="6709000" />
       <workItem from="1682558280061" duration="5783000" />
+      <workItem from="1682642183384" duration="5819000" />
+      <workItem from="1683070934482" duration="6000" />
+      <workItem from="1683156051612" duration="12537000" />
+      <workItem from="1683203134084" duration="166000" />
+      <workItem from="1683228672008" duration="9618000" />
     </task>
     <task id="LOCAL-00001" summary="Initial push...">
       <created>1680821475950</created>

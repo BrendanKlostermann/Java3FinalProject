@@ -126,20 +126,36 @@
             questionWrong.textContent = countWrong;
             let quizForm = document.getElementById("pokemon-info");
             let quizQuestion = quizForm.querySelector("#pokemon-info h3");
-            quizQuestion.textContent = jsFanQuestions[randomQuestion].question;
+            quizQuestion.textContent = jsFanQuestions[randomQuestion].fanQuestionCSV;
 
 
             let buttons = quizForm.getElementsByTagName("button");
 
-            buttons[0].innerHTML = question.option1;
-            buttons[1].innerHTML = question.option2;
-            buttons[2].innerHTML = question.option3;
+            if (question.option1 === "") {
+                buttons[0].style.display = "none";
+            } else {
+                buttons[0].innerHTML = question.option1;
+                buttons[0].style.display = "inline-block";
+            }
+            if (question.option2 === "") {
+                buttons[1].style.display = "none";
+            } else {
+                buttons[1].innerHTML = question.option2;
+                buttons[1].style.display = "inline-block";
+            }
+            if (question.option3 === "") {
+                buttons[2].style.display = "none";
+            } else {
+                buttons[2].innerHTML = question.option3;
+                buttons[2].style.display = "inline-block";
+            }
             if (question.option4 === "") {
                 buttons[3].style.display = "none";
             } else {
                 buttons[3].innerHTML = question.option4;
                 buttons[3].style.display = "inline-block";
             }
+
         }
 
         function showRandomQuestion() {

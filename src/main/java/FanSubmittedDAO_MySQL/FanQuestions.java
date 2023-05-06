@@ -2,12 +2,13 @@ package FanSubmittedDAO_MySQL;
 
 public class FanQuestions {
     private int question_id;
-    private int memberId;
+    private String email;
     private String fanQuestion;
     private String fanAnswer;
     private String wrongAnswer1;
     private String wrongAnswer2;
     private String wrongAnswer3;
+    private boolean questionStatus;
 
     public boolean isQuestionStatus() {
         return questionStatus;
@@ -17,7 +18,6 @@ public class FanQuestions {
         this.questionStatus = questionStatus;
     }
 
-    private boolean questionStatus;
 
     public int getQuestion_id() {
         return question_id;
@@ -27,12 +27,12 @@ public class FanQuestions {
         this.question_id = question_id;
     }
 
-    public int getMemberId() {
-        return memberId;
+    public String getEmail() {
+        return email;
     }
 
-    public void setMemberId(int memberId) {
-        this.memberId = memberId;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getFanQuestion() {

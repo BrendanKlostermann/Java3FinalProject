@@ -1,5 +1,6 @@
 package FanQuestionDAO_CSV;
 
+import FanSubmittedDAO_MySQL.*;
 import com.google.gson.Gson;
 
 import javax.servlet.*;
@@ -21,12 +22,20 @@ public class MakeYourOwnQuestionServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+
         String question = request.getParameter("question");
         String answer = request.getParameter("answer");
         String option1 = request.getParameter("option1");
         String option2 = request.getParameter("option2");
         String option3 = request.getParameter("option3");
         String email = request.getParameter("email");
+
+        question = question.replaceAll("[\"',]", "");
+        answer = answer.replaceAll("[\"',]", "");
+        option1 = option1.replaceAll("[\"',]", "");
+        option2 = option2.replaceAll("[\"',]", "");
+        option3 = option3.replaceAll("[\"',]", "");
 
         if(option3 == null || option3 == "")
         {
@@ -63,6 +72,22 @@ public class MakeYourOwnQuestionServlet extends HttpServlet {
         } catch (IOException e) {
             e.printStackTrace();
             throw new ServletException("Error writing data to CSV file", e);
+        }
+
+        FanQuestions fanquestion = new FanQuestions();
+        fanquestion.setEmail(email);
+        fanquestion.setFanQuestion(answer);
+        fanquestion.setFanAnswer(answer);
+        fanquestion.setWrongAnswer1(option1);
+        fanquestion.setWrongAnswer2(option2);
+        fanquestion.setWrongAnswer3(option3);
+        fanquestion.setQuestionStatus(false);
+        // Write to the database
+        try{
+            FanSubmittedDAO_MySQL _fanQuestionMySQL = new FanSubmittedDAO_MySQL();
+            _fanQuestionMySQL.addFanQuestion(fanquestion);
+        }catch (Exception up){
+            throw new IllegalArgumentException("error saving question", up);
         }
 
         List<FanQuestion> fanQuestions = FanQuestionDAO_CSV.getAllFanQuestion(request, response);

@@ -29,7 +29,7 @@ public class FanSubmittedDAO_MySQL implements DAO_MySQL<User> {
                 ResultSet resultSet = statement.executeQuery();
                 while(resultSet.next()){
                     FanQuestions question = new FanQuestions();
-                    question.setMemberId(resultSet.getInt(1));
+                    question.setEmail(resultSet.getString(1));
                     question.setFanQuestion(resultSet.getString(2));
                     question.setWrongAnswer1(resultSet.getString(3));
                     question.setWrongAnswer2(resultSet.getString(4));
@@ -54,7 +54,7 @@ public class FanSubmittedDAO_MySQL implements DAO_MySQL<User> {
                 ResultSet resultSet = statement.executeQuery();
                 if(resultSet.next()){
                     question = new FanQuestions();
-                    question.setMemberId(resultSet.getInt(1));
+                    question.setEmail(resultSet.getString(1));
                     question.setFanQuestion(resultSet.getString(2));
                     question.setWrongAnswer1(resultSet.getString(3));
                     question.setWrongAnswer2(resultSet.getString(4));
@@ -73,8 +73,8 @@ public class FanSubmittedDAO_MySQL implements DAO_MySQL<User> {
         int count = 0;
         try (Connection connection = getConnection()) {
             PreparedStatement statement = connection.prepareStatement(
-                    "INSERT INTO submittedfanquestion (id, question, answer, wrong_answer1, wrong_answer2, wrong_answer3) values (?,?,?,?,?,?)");
-            statement.setInt(1, question.getMemberId());
+                    "INSERT INTO submittedfanquestion (email, question, answer, wrong_answer1, wrong_answer2, wrong_answer3) values (?,?,?,?,?,?)");
+            statement.setString(1, question.getEmail());
             statement.setString(2, question.getFanQuestion());
             statement.setString(3, question.getFanAnswer());
             statement.setString(4, question.getWrongAnswer1());

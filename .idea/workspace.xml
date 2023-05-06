@@ -9,38 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d0271fa-c463-4566-a529-6609b8afd200" name="Changes" comment="got login servlet and register servlet set up, need to do register logic">
-      <change afterPath="$PROJECT_DIR$/src/main/java/FanSubmittedDAO_MySQL/FanQuestions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FanSubmittedDAO_MySQL/FanSubmittedDAO_MySQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HelpQuestion/HelpServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HelpQuestion/ViewHelpServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LogIn/LogOutServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UserDAO/PasswordAuthentication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/viewhelp.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="8d0271fa-c463-4566-a529-6609b8afd200" name="Changes" comment="updated with some log in info, .env is private and wont be loaded.">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/09d5530c-8ba7-4411-b13b-0b2466de6827.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/09d5530c-8ba7-4411-b13b-0b2466de6827.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/09d5530c-8ba7-4411-b13b-0b2466de6827/storage_v2/_src_/schema/pokemonquiz.qL0LTg.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/09d5530c-8ba7-4411-b13b-0b2466de6827/storage_v2/_src_/schema/pokemonquiz.qL0LTg.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/09d5530c-8ba7-4411-b13b-0b2466de6827/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/09d5530c-8ba7-4411-b13b-0b2466de6827/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FanQuestionDAO_CSV/FanQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FanQuestionDAO_CSV/FanQuestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FanQuestionDAO_CSV/FanQuestionDAO_CSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FanQuestionDAO_CSV/FanQuestionDAO_CSV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FanQuestionDAO_CSV/FanQuestionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FanQuestionDAO_CSV/FanQuestionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HelpDAO_MySQL/HelpDAO_MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HelpDAO_MySQL/HelpDAO_MySQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LogIn/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogIn/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LogIn/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogIn/RegisterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LogIn/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogIn/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserDAO/UserDAO_MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserDAO/UserDAO_MySQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FanQuestionDAO_CSV/MakeYourOwnQuestionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FanQuestionDAO_CSV/MakeYourOwnQuestionServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FanSubmittedDAO_MySQL/FanQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FanSubmittedDAO_MySQL/FanQuestions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FanSubmittedDAO_MySQL/FanSubmittedDAO_MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FanSubmittedDAO_MySQL/FanSubmittedDAO_MySQL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/FanQuestions.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/FanQuestions.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/MakeYourOwnQuestions.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/MakeYourOwnQuestions.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/PictureQuiz.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/PictureQuiz.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/TypeQuiz.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/TypeQuiz.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/help.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/help.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pokedex.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pokedex.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/questionSubmitted.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/questionSubmitted.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/PokemonCSV/fanQuestions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/PokemonCSV/fanQuestions.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,41 +63,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/aquas/IdeaProjects/java3-project",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/aquas/IdeaProjects/java3-project&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlserver",
-      "azure",
-      "az_cosmos_mongo",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver&quot;,
+      &quot;azure&quot;,
+      &quot;az_cosmos_mongo&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\aquas\IdeaProjects\pokemonQuiz\src\main\webapp" />
@@ -411,7 +388,10 @@
       <workItem from="1683070934482" duration="6000" />
       <workItem from="1683156051612" duration="12537000" />
       <workItem from="1683203134084" duration="166000" />
-      <workItem from="1683228672008" duration="9618000" />
+      <workItem from="1683228672008" duration="10220000" />
+      <workItem from="1683241520985" duration="89000" />
+      <workItem from="1683378693013" duration="6398000" />
+      <workItem from="1683387171132" duration="2168000" />
     </task>
     <task id="LOCAL-00001" summary="Initial push...">
       <created>1680821475950</created>
@@ -434,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682372083445</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="updated with some log in info, .env is private and wont be loaded.">
+      <created>1683238357212</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683238357213</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,6 +442,7 @@
     <MESSAGE value="Initial push..." />
     <MESSAGE value="project minus log in and user roles" />
     <MESSAGE value="got login servlet and register servlet set up, need to do register logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="got login servlet and register servlet set up, need to do register logic" />
+    <MESSAGE value="updated with some log in info, .env is private and wont be loaded." />
+    <option name="LAST_COMMIT_MESSAGE" value="updated with some log in info, .env is private and wont be loaded." />
   </component>
 </project>

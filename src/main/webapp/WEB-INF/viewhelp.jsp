@@ -93,6 +93,7 @@
         <tbody>
 
         <%for (Help item : questions){ %>
+        <%if(item.getStatus().equals("Compplete")){ continue;}%>
         <tr>
           <td><%=item.getId()%></td>
           <td><%=item.getQuestion()%></td>
@@ -101,8 +102,12 @@
           <td>
             <form action="viewhelp" method="post">
               <input type="hidden" name="helpID" value="<%= item.getId() %>">
+              <%if(item.getStatus().equals("New")){%>
               <button type="submit" name="helpStatus" value="In Progress" class="btn btn-primary">In Progress</button>
+              <%}
+              else if(item.getStatus().equals("In Progress")) {%>
               <button type="submit" name="helpStatus" value="Complete" class="btn btn-success">Complete</button>
+              <%}%>
             </form>
             </td>
           </form>

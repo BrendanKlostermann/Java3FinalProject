@@ -18,6 +18,19 @@ public class ViewHelpServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HelpDAO_MySQL helpDAO = new HelpDAO_MySQL();
         List<Help> questions = helpDAO.getAllHelp();
+
+        HttpSession session = request.getSession();
+        if(session.getAttribute("user") == null){
+            response.sendRedirect("login");
+            return;
+        }
+
+        User user = (User)session.getAttribute("user");
+        if(!user.getRole().equals("Administrator")){
+            request.getRequestDispatcher("index.jsp").forward(request,response);
+            return;
+        }
+
         if(questions.size() == 0 | questions == null){
             request.setAttribute("questionsError","No issues are found at this time.");
             request.getRequestDispatcher("WEB-INF/viewhelp.jsp").forward(request,response);
